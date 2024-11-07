@@ -1,4 +1,5 @@
 -- Implement column encryption on the `password` column in the `User` table
+-- Note: We encountered issues with this code in SQL Server Management Studio, but it ran w/o error in Azure Data Studio
 
 CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'StrongPasswordForDMK!123';
 
