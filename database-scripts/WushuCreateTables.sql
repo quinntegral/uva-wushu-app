@@ -1,3 +1,5 @@
+USE PROJ
+
 CREATE TABLE Category (
     categoryID INT,
     productType VARCHAR(255),
@@ -13,6 +15,7 @@ CREATE TABLE [Product] (
     categoryID INT, -- FK reference to Category (categoryID)
     [description] TEXT,
     cost DECIMAL(10, 2),
+	starAmount DECIMAL(3, 2) CHECK (starAmount BETWEEN 1 AND 5),
     CONSTRAINT Product_PK PRIMARY KEY (productID),
     CONSTRAINT Product_FK FOREIGN KEY (categoryID) REFERENCES Category(categoryID)
 );

@@ -1,4 +1,3 @@
-USE [WushuApp];
 INSERT INTO Category (categoryID, productType, size, heightRange, weightRange, armLengthRange)
 VALUES
 (1, 'Broadsword', 'Medium weapon', '150-180cm', '50-75kg', '60-80cm'),
@@ -10,38 +9,38 @@ VALUES
 (7, 'Silks', 'Apparel', 'N/A', 'N/A', 'N/A'),
 (8, 'Shoes', 'Apparel', 'N/A', 'N/A', 'N/A');
 
-INSERT INTO [Product] (productID, categoryID, [description], cost)
+INSERT INTO [Product] (productID, categoryID, [description], cost, starAmount)
 VALUES
-(1, 1, 'DaYe HengTong Wushu Pudao', 119.00),
-(2, 1, 'HD1001 Competition Wushu Broadsword - Wooden Handle', 88.95),
-(3, 1, 'HD1002 Competition Wushu Broadsword - Stainless Steel Handle', 89.95),
-(4, 1, 'DaYe Wushu Competition Broadsword', 89.95),
-(5, 1, 'DaYe HengTong Professional Kung Fu Training Broad Sword', 55.00),
-(6, 2, 'Competition Wushu Straight Sword - Wooden Handle', 88.95),
-(7, 2, 'DaYe Professional Kung Fu Training Straight Sword', 62.99),
-(8, 2, 'Competition Wushu Straight Sword - Metal Handle', 98.99),
-(9, 2, 'DaYe Competition Wushu Straight Sword', 89.95),
-(10, 4, 'DaYe Carbon Fiber Wushu Competition Spear (Qiang)', 149.95),
-(11, 4, 'DaYe Competition Carbon Fiber Wushu Spear', 169.95),
-(12, 3, 'DaYe Carbon Fiber Wushu Bo Staff', 139.95),
-(13, 3, 'DaYe Wushu Competition Carbon Fiber Bo Staff', 149.95),
-(14, 3, 'Competition Carbon Fiber Wushu Bo Staff - WeiSing', 139.95),
-(15, 1, 'DaYe Competition Southern Broadsword (Nandao)', 109.95),
-(16, 1, 'SGL Competition Southern Broadsword (Nandao)', 75.99),
-(17, 2, 'Tai Chi Competition Straight Sword', 109.95),
-(18, 2, 'Premium Tai Chi Competition Long Sword', 139.00),
-(19, 7, 'Red Silk Wushu Uniform', 55.00),
-(20, 7, 'Blue Silk Wushu Uniform', 55.00),
-(21, 7, 'Black Silk Wushu Uniform', 70.00),
-(22, 7, 'White Silk Wushu Sash', 25.00),
-(23, 7, 'Gold Silk Wushu Sash', 25.00),
-(24, 8, 'Lightweight Wushu Shoes', 65.00),
-(25, 8, 'Reinforced Wushu Shoes', 75.00),
-(26, 8, 'Breathable Wushu Shoes', 85.00),
-(27, 8, 'Traditional Wushu Shoes', 60.00),
-(28, 7, 'Green Silk Wushu Uniform', 58.00),
-(29, 7, 'Purple Silk Wushu Uniform', 62.00),
-(30, 7, 'White Silk Sash with Gold Embroidery', 28.00);
+(1, 1, 'DaYe HengTong Wushu Pudao', 119.00, 3.21),
+(2, 1, 'HD1001 Competition Wushu Broadsword - Wooden Handle', 88.95, 3.21),
+(3, 1, 'HD1002 Competition Wushu Broadsword - Stainless Steel Handle', 89.95, 3.21),
+(4, 1, 'DaYe Wushu Competition Broadsword', 89.95, 3.21),
+(5, 1, 'DaYe HengTong Professional Kung Fu Training Broad Sword', 55.00, 3.21),
+(6, 2, 'Competition Wushu Straight Sword - Wooden Handle', 88.95, 3.21),
+(7, 2, 'DaYe Professional Kung Fu Training Straight Sword', 62.99, 3.21),
+(8, 2, 'Competition Wushu Straight Sword - Metal Handle', 98.99, 3.21),
+(9, 2, 'DaYe Competition Wushu Straight Sword', 89.95, 3.21),
+(10, 4, 'DaYe Carbon Fiber Wushu Competition Spear (Qiang)', 149.95, 3.21),
+(11, 4, 'DaYe Competition Carbon Fiber Wushu Spear', 169.95, 3.21),
+(12, 3, 'DaYe Carbon Fiber Wushu Bo Staff', 139.95, 3.21),
+(13, 3, 'DaYe Wushu Competition Carbon Fiber Bo Staff', 149.95, 3.21),
+(14, 3, 'Competition Carbon Fiber Wushu Bo Staff - WeiSing', 139.95, 3.21),
+(15, 1, 'DaYe Competition Southern Broadsword (Nandao)', 109.95, 3.21),
+(16, 1, 'SGL Competition Southern Broadsword (Nandao)', 75.99, 3.21),
+(17, 2, 'Tai Chi Competition Straight Sword', 109.95, 3.25),
+(18, 2, 'Premium Tai Chi Competition Long Sword', 139.00, 3.21),
+(19, 7, 'Red Silk Wushu Uniform', 55.00, 3.21),
+(20, 7, 'Blue Silk Wushu Uniform', 55.00, 3.21),
+(21, 7, 'Black Silk Wushu Uniform', 70.00, 3.21),
+(22, 7, 'White Silk Wushu Sash', 25.00, 3.21),
+(23, 7, 'Gold Silk Wushu Sash', 25.00, 3.21),
+(24, 8, 'Lightweight Wushu Shoes', 65.00, 3.21),
+(25, 8, 'Reinforced Wushu Shoes', 75.00, 3.21),
+(26, 8, 'Breathable Wushu Shoes', 85.00, 3.21),
+(27, 8, 'Traditional Wushu Shoes', 60.00, 3.21),
+(28, 7, 'Green Silk Wushu Uniform', 58.00, 3.21),
+(29, 7, 'Purple Silk Wushu Uniform', 62.00, 3.21),
+(30, 7, 'White Silk Sash with Gold Embroidery', 28.00, 3.21);
 
 INSERT INTO dbo.[User] (userID, [name], height, [weight], armLength, currentWeapon, currentApparel, email, [password], phoneNumber, isExecUser)
 VALUES
